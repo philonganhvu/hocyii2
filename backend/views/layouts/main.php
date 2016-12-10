@@ -54,13 +54,20 @@ AppAsset::register($this);
         'items' => $menuItems,
     ]);
     NavBar::end();
-    ?>
-
+    ?>	
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
+		<div class="languages">
+			<?php 
+			//var_dump(Yii::$app->params['languages']);exit;
+			foreach(Yii::$app->params['languages'] as $key => $language){
+				echo '<span class="language" id="'.$key.'">'.$language.'| </span>';
+			}
+			?>
+		</div>
         <?= $content ?>
     </div>
 </div>

@@ -16,6 +16,23 @@ return [
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
+		'i18n' => [
+			'translations' => [
+				'backend' => [
+					'class' => 'yii\i18n\PhpMessageSource',
+					//'basePath' => '@common/messages',
+					'sourceLanguage' => 'en',
+					'fileMap'=>[
+						'backend'=>'backend.php',
+						'backend/error'=>'error_backend.php',
+					]
+				],
+				/*'backend*' => [
+					'class' => 'yii\i18n\PhpMessageSource',
+					'basePath' => '@common/messages',
+				],*/
+			],
+		],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -46,5 +63,8 @@ return [
         ],
         */
     ],
+	'as beforeRequest'=>[
+		'class'=>'backend\components\CheckIfLoggedIn',
+	],
     'params' => $params,
 ];
