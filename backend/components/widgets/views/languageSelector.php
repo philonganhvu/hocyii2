@@ -14,13 +14,7 @@ $this->registerJsFile(Yii::$app->request->baseUrl.'/js/language.js',[
 		$lastElement = end($languages);
 		foreach($languages as $key=>$lang){
 			if($key!=$lang){
-				echo Html::ajaxLink($lang,'',array(
-						'type'=>'post',
-						'data'=>'lang='.$key.'&YII_CSRF_TOKEN='.Yii::$app->request->csrfToken,
-						'success'=>'function(data){window.location.reload();}'
-					),
-					array()
-				);
+				echo '<span class="language" id="'.$key.'">'.$lang.' </span>';
 			}else{
 				echo '<b>'.$lang.'</b>';
 			}

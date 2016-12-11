@@ -63,8 +63,12 @@ AppAsset::register($this);
 		<div class="languages">
 			<?php 
 			//var_dump(Yii::$app->params['languages']);exit;
+			$lastElement = end(Yii::$app->params['languages']);
 			foreach(Yii::$app->params['languages'] as $key => $language){
-				echo '<span class="language" id="'.$key.'">'.$language.'| </span>';
+				if ($language!=$lastElement)
+					echo '<span class="language" id="'.$key.'">'.$language.'| </span>';
+				else
+					echo '<span class="language" id="'.$key.'">'.$language.'</span>';
 			}
 			?>
 		</div>
