@@ -68,6 +68,9 @@ AppAsset::register($this);
 			}
 			?>
 		</div>
+		<div class="pull-right" id="language-selector" style="position:relative; top:60p" >
+			<?= \backend\components\widgets\LanguageSelector::widget();?>
+		</div>
         <?= $content ?>
     </div>
 </div>
