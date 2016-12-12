@@ -26,6 +26,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
+<<<<<<< HEAD
 <!-- END HEAD -->
 <body class="page-container-bg-solid">
     <?php $this->beginBody() ?>
@@ -1907,6 +1908,70 @@ AppAsset::register($this);
                 <!-- END FOOTER -->
             </div>
         </div>
+=======
+<body>
+<?php $this->beginBody() ?>
+
+<div class="wrap">
+    <?php
+    NavBar::begin([
+        'brandLabel' => 'My Company',
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'class' => 'navbar-inverse navbar-fixed-top',
+        ],
+    ]);
+    $menuItems = [
+        ['label' => 'Home', 'url' => ['/site/index']],
+    ];
+    if (Yii::$app->user->isGuest) {
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+    } else {
+        $menuItems[] = '<li>'
+            . Html::beginForm(['/site/logout'], 'post')
+            . Html::submitButton(
+                'Logout (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>';
+    }
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right'],
+        'items' => $menuItems,
+    ]);
+    NavBar::end();
+    ?>	
+    <div class="container">
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
+        <?= Alert::widget() ?>
+		<div class="languages">
+			<?php 
+			//var_dump(Yii::$app->params['languages']);exit;
+			$lastElement = end(Yii::$app->params['languages']);
+			foreach(Yii::$app->params['languages'] as $key => $language){
+				if ($language!=$lastElement)
+					echo '<span class="language" id="'.$key.'">'.$language.'| </span>';
+				else
+					echo '<span class="language" id="'.$key.'">'.$language.'</span>';
+			}
+			?>
+		</div>
+		<div class="pull-right" id="language-selector" style="position:relative; top:60p" >
+			<?= \backend\components\widgets\LanguageSelector::widget();?>
+		</div>
+        <?= $content ?>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+
+        <p class="pull-right"><?= Yii::powered() ?></p>
+>>>>>>> fc4054f5b1e5dbd3a987c6f8118caffdd63d1953
     </div>
     <?php $this->endBody() ?>
 </body>

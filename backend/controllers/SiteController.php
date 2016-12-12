@@ -5,6 +5,7 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\filters\Cookie;
 use common\models\LoginForm;
 
 /**
@@ -22,7 +23,7 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['login', 'error', 'language'],
                         'allow' => true,
                     ],
                     [
@@ -36,6 +37,7 @@ class SiteController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
+                    'language' => ['post'],
                 ],
             ],
         ];
@@ -84,6 +86,20 @@ class SiteController extends Controller
         }
     }
 
+    public function actionLanguage()
+    {
+        if(isset($_POST['lang'])
+			&& array_key_exists(Yii::$app->request->post('lang'),Yii::$app->params['languages'])){
+			Yii::$app->params['languages'] = $_POST['lang'];
+			$cookie = new yii\web\Cookie([
+				'name'=>'lang',
+				'value'=>$_POST['lang'],
+			]);		
+
+        Yii::$app->getResponse()->getCookies()->add($cookie);
+		}
+    }
+	
     /**
      * Logout action.
      *
@@ -95,4 +111,5 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+	
 }

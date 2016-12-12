@@ -37,6 +37,7 @@ class AppAsset extends AssetBundle
         'favicon.ico'
     ];
     public $js = [
+<<<<<<< HEAD
         //<!-- BEGIN CORE PLUGINS -->
         'common/global/plugins/jquery.min.js',
         'common/global/plugins/bootstrap/js/bootstrap.min.js',
@@ -77,6 +78,9 @@ class AppAsset extends AssetBundle
         'common/layouts/layout/scripts/demo.min.js',
         'common/layouts/global/scripts/quick-sidebar.min.js',
         //<!-- END THEME LAYOUT SCRIPTS -->
+=======
+		'js/main.js',
+>>>>>>> fc4054f5b1e5dbd3a987c6f8118caffdd63d1953
     ];
     public $depends = [
         'yii\web\YiiAsset',
