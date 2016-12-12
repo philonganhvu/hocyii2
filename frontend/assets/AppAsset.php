@@ -12,9 +12,24 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        //<!-- Stylesheets
+        'http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic',
+        'css/bootstrap.css',
+        'css/style.css',
+        'css/swiper.css',
+        'css/dark.css',
+        'css/font-icons.css',
+        'css/animate.css',
+        'css/magnific-popup.css',
+        'css/responsive.css',
     ];
     public $js = [
+        //<!-- External JavaScripts
+        'js/jquery.js',
+        'js/plugins.js',
+
+        //<!-- Footer Scripts
+        'js/functions.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
