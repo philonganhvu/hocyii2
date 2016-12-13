@@ -26,7 +26,6 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<<<<<<< HEAD
 <!-- END HEAD -->
 <body class="page-container-bg-solid">
     <?php $this->beginBody() ?>
@@ -281,7 +280,7 @@ AppAsset::register($this);
                                                     <li>
                                                         <a href="#">
                                                                 <span class="photo">
-                                                                    <img src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                                    <img src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
                                                             <span class="subject">
                                                                     <span class="from"> Lisa Wong </span>
                                                                     <span class="time">Just Now </span>
@@ -292,7 +291,7 @@ AppAsset::register($this);
                                                     <li>
                                                         <a href="#">
                                                                 <span class="photo">
-                                                                    <img src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                                    <img src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
                                                             <span class="subject">
                                                                     <span class="from"> Richard Doe </span>
                                                                     <span class="time">16 mins </span>
@@ -303,7 +302,7 @@ AppAsset::register($this);
                                                     <li>
                                                         <a href="#">
                                                                 <span class="photo">
-                                                                    <img src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                                    <img src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar1.jpg" class="img-circle" alt=""> </span>
                                                             <span class="subject">
                                                                     <span class="from"> Bob Nilson </span>
                                                                     <span class="time">2 hrs </span>
@@ -314,7 +313,7 @@ AppAsset::register($this);
                                                     <li>
                                                         <a href="#">
                                                                 <span class="photo">
-                                                                    <img src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                                    <img src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" class="img-circle" alt=""> </span>
                                                             <span class="subject">
                                                                     <span class="from"> Lisa Wong </span>
                                                                     <span class="time">40 mins </span>
@@ -325,7 +324,7 @@ AppAsset::register($this);
                                                     <li>
                                                         <a href="#">
                                                                 <span class="photo">
-                                                                    <img src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                                    <img src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" class="img-circle" alt=""> </span>
                                                             <span class="subject">
                                                                     <span class="from"> Richard Doe </span>
                                                                     <span class="time">46 mins </span>
@@ -341,7 +340,7 @@ AppAsset::register($this);
                                     <!-- BEGIN USER LOGIN DROPDOWN -->
                                     <li class="dropdown dropdown-user dropdown-dark">
                                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                            <img alt="" class="img-circle" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar9.jpg">
+                                            <img alt="" class="img-circle" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar9.jpg">
                                             <span class="username username-hide-mobile">Nick</span>
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-default">
@@ -386,6 +385,10 @@ AppAsset::register($this);
                                 </ul>
                             </div>
                             <!-- END TOP NAVIGATION MENU -->
+                            <!--multi languages-->
+                            <div class="pull-right" id="language-selector" style="position:relative; top:60px" >
+                                <?= \backend\components\widgets\LanguageSelector::widget();?>
+                            </div>
                         </div>
                     </div>
                     <!-- END HEADER TOP -->
@@ -870,241 +873,11 @@ AppAsset::register($this);
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="menu-dropdown classic-menu-dropdown ">
-                                        <a href="javascript:;">
-                                            <i class="icon-briefcase"></i> Pages
-                                            <span class="arrow"></span>
-                                        </a>
-                                        <ul class="dropdown-menu pull-left">
-                                            <li class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-basket"></i> eCommerce
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li class=" ">
-                                                        <a href="ecommerce_index.html" class="nav-link ">
-                                                            <i class="icon-home"></i> Dashboard </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="ecommerce_orders.html" class="nav-link ">
-                                                            <i class="icon-basket"></i> Orders </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="ecommerce_orders_view.html" class="nav-link ">
-                                                            <i class="icon-tag"></i> Order View </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="ecommerce_products.html" class="nav-link ">
-                                                            <i class="icon-graph"></i> Products </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="ecommerce_products_edit.html" class="nav-link ">
-                                                            <i class="icon-graph"></i> Product Edit </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-docs"></i> Apps
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li class=" ">
-                                                        <a href="app_todo.html" class="nav-link ">
-                                                            <i class="icon-clock"></i> Todo 1 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="app_todo_2.html" class="nav-link ">
-                                                            <i class="icon-check"></i> Todo 2 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="app_inbox.html" class="nav-link ">
-                                                            <i class="icon-envelope"></i> Inbox </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="app_calendar.html" class="nav-link ">
-                                                            <i class="icon-calendar"></i> Calendar </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="app_ticket.html" class="nav-link ">
-                                                            <i class="icon-notebook"></i> Support </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-user"></i> User
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li class=" ">
-                                                        <a href="page_user_profile_1.html" class="nav-link ">
-                                                            <i class="icon-user"></i> Profile 1 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_user_profile_1_account.html" class="nav-link ">
-                                                            <i class="icon-user-female"></i> Profile 1 Account </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_user_profile_1_help.html" class="nav-link ">
-                                                            <i class="icon-user-following"></i> Profile 1 Help </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_user_profile_2.html" class="nav-link ">
-                                                            <i class="icon-users"></i> Profile 2 </a>
-                                                    </li>
-                                                    <li class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            <i class="icon-notebook"></i> Login
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="page_user_login_1.html" class="nav-link " target="_blank"> Login Page 1 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_2.html" class="nav-link " target="_blank"> Login Page 2 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_3.html" class="nav-link " target="_blank"> Login Page 3 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_4.html" class="nav-link " target="_blank"> Login Page 4 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_5.html" class="nav-link " target="_blank"> Login Page 5 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_user_login_6.html" class="nav-link " target="_blank"> Login Page 6 </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_user_lock_1.html" class="nav-link " target="_blank">
-                                                            <i class="icon-lock"></i> Lock Screen 1 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_user_lock_2.html" class="nav-link " target="_blank">
-                                                            <i class="icon-lock-open"></i> Lock Screen 2 </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-social-dribbble"></i> General
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li class=" ">
-                                                        <a href="page_general_about.html" class="nav-link ">
-                                                            <i class="icon-info"></i> About </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_general_contact.html" class="nav-link ">
-                                                            <i class="icon-call-end"></i> Contact </a>
-                                                    </li>
-                                                    <li class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            <i class="icon-notebook"></i> Portfolio
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_1.html" class="nav-link "> Portfolio 1 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_2.html" class="nav-link "> Portfolio 2 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_3.html" class="nav-link "> Portfolio 3 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_portfolio_4.html" class="nav-link "> Portfolio 4 </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="dropdown-submenu ">
-                                                        <a href="javascript:;" class="nav-link nav-toggle">
-                                                            <i class="icon-magnifier"></i> Search
-                                                            <span class="arrow"></span>
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li class="">
-                                                                <a href="page_general_search.html" class="nav-link "> Search 1 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_2.html" class="nav-link "> Search 2 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_3.html" class="nav-link "> Search 3 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_4.html" class="nav-link "> Search 4 </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="page_general_search_5.html" class="nav-link "> Search 5 </a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_general_pricing.html" class="nav-link ">
-                                                            <i class="icon-tag"></i> Pricing </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_general_faq.html" class="nav-link ">
-                                                            <i class="icon-wrench"></i> FAQ </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_general_blog.html" class="nav-link ">
-                                                            <i class="icon-pencil"></i> Blog </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_general_blog_post.html" class="nav-link ">
-                                                            <i class="icon-note"></i> Blog Post </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_general_invoice.html" class="nav-link ">
-                                                            <i class="icon-envelope"></i> Invoice </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_general_invoice_2.html" class="nav-link ">
-                                                            <i class="icon-envelope"></i> Invoice 2 </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-submenu ">
-                                                <a href="javascript:;" class="nav-link nav-toggle ">
-                                                    <i class="icon-settings"></i> System
-                                                    <span class="arrow"></span>
-                                                </a>
-                                                <ul class="dropdown-menu">
-                                                    <li class=" ">
-                                                        <a href="page_system_coming_soon.html" class="nav-link " target="_blank"> Coming Soon </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_system_404_1.html" class="nav-link "> 404 Page 1 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_system_404_2.html" class="nav-link " target="_blank"> 404 Page 2 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_system_404_3.html" class="nav-link " target="_blank"> 404 Page 3 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_system_500_1.html" class="nav-link "> 500 Page 1 </a>
-                                                    </li>
-                                                    <li class=" ">
-                                                        <a href="page_system_500_2.html" class="nav-link " target="_blank"> 500 Page 2 </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
                                 </ul>
                             </div>
                             <!-- END MEGA MENU -->
                         </div>
+
                     </div>
                     <!-- END HEADER MENU -->
                 </div>
@@ -1252,6 +1025,18 @@ AppAsset::register($this);
                                     'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                                 ]) ?>
                                 <?= Alert::widget() ?>
+                                <div class="languages">
+                                    <?php
+                                    //var_dump(Yii::$app->params['languages']);exit;
+                                    $lastElement = end(Yii::$app->params['languages']);
+                                    foreach(Yii::$app->params['languages'] as $key => $language){
+                                        if ($language!=$lastElement)
+                                            echo '<span class="language" id="'.$key.'">'.$language.'| </span>';
+                                        else
+                                            echo '<span class="language" id="'.$key.'">'.$language.'</span>';
+                                    }
+                                    ?>
+                                </div>
                                 <!-- END PAGE BREADCRUMBS -->
                                 <!-- BEGIN PAGE CONTENT INNER -->
                                 <div class="page-content-inner">
@@ -1317,14 +1102,14 @@ AppAsset::register($this);
                                                 <div class="media-status">
                                                     <span class="badge badge-success">8</span>
                                                 </div>
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Bob Nilson</h4>
                                                     <div class="media-heading-sub"> Project Manager </div>
                                                 </div>
                                             </li>
                                             <li class="media">
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar1.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar1.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Nick Larson</h4>
                                                     <div class="media-heading-sub"> Art Director </div>
@@ -1334,14 +1119,14 @@ AppAsset::register($this);
                                                 <div class="media-status">
                                                     <span class="badge badge-danger">3</span>
                                                 </div>
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar4.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar4.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Deon Hubert</h4>
                                                     <div class="media-heading-sub"> CTO </div>
                                                 </div>
                                             </li>
                                             <li class="media">
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Ella Wong</h4>
                                                     <div class="media-heading-sub"> CEO </div>
@@ -1354,7 +1139,7 @@ AppAsset::register($this);
                                                 <div class="media-status">
                                                     <span class="badge badge-warning">2</span>
                                                 </div>
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar6.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar6.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Lara Kunis</h4>
                                                     <div class="media-heading-sub"> CEO, Loop Inc </div>
@@ -1365,7 +1150,7 @@ AppAsset::register($this);
                                                 <div class="media-status">
                                                     <span class="label label-sm label-success">new</span>
                                                 </div>
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar7.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar7.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Ernie Kyllonen</h4>
                                                     <div class="media-heading-sub"> Project Manager,
@@ -1373,7 +1158,7 @@ AppAsset::register($this);
                                                 </div>
                                             </li>
                                             <li class="media">
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar8.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar8.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Lisa Stone</h4>
                                                     <div class="media-heading-sub"> CTO, Keort Inc </div>
@@ -1384,14 +1169,14 @@ AppAsset::register($this);
                                                 <div class="media-status">
                                                     <span class="badge badge-success">7</span>
                                                 </div>
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar9.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar9.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Deon Portalatin</h4>
                                                     <div class="media-heading-sub"> CFO, H&D LTD </div>
                                                 </div>
                                             </li>
                                             <li class="media">
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar10.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar10.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Irina Savikova</h4>
                                                     <div class="media-heading-sub"> CEO, Tizda Motors Inc </div>
@@ -1401,7 +1186,7 @@ AppAsset::register($this);
                                                 <div class="media-status">
                                                     <span class="badge badge-danger">4</span>
                                                 </div>
-                                                <img class="media-object" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar11.jpg" alt="...">
+                                                <img class="media-object" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar11.jpg" alt="...">
                                                 <div class="media-body">
                                                     <h4 class="media-heading">Maria Gomez</h4>
                                                     <div class="media-heading-sub"> Manager, Infomatic Inc </div>
@@ -1418,7 +1203,7 @@ AppAsset::register($this);
                                             </div>
                                             <div class="page-quick-sidebar-chat-user-messages">
                                                 <div class="post out">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1427,7 +1212,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post in">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Ella Wong</a>
@@ -1436,7 +1221,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post out">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1445,7 +1230,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post in">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Ella Wong</a>
@@ -1454,7 +1239,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post out">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1463,7 +1248,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post in">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Ella Wong</a>
@@ -1472,7 +1257,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post out">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1481,7 +1266,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post in">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar2.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Ella Wong</a>
@@ -1490,7 +1275,7 @@ AppAsset::register($this);
                                                     </div>
                                                 </div>
                                                 <div class="post out">
-                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?><?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
+                                                    <img class="avatar" alt="" src="<?=Yii::$app->homeUrl?>/common/layouts/layout/img/avatar3.jpg" />
                                                     <div class="message">
                                                         <span class="arrow"></span>
                                                         <a href="javascript:;" class="name">Bob Nilson</a>
@@ -1908,71 +1693,6 @@ AppAsset::register($this);
                 <!-- END FOOTER -->
             </div>
         </div>
-=======
-<body>
-<?php $this->beginBody() ?>
-
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'My Company',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-    ];
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>	
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
-		<div class="languages">
-			<?php 
-			//var_dump(Yii::$app->params['languages']);exit;
-			$lastElement = end(Yii::$app->params['languages']);
-			foreach(Yii::$app->params['languages'] as $key => $language){
-				if ($language!=$lastElement)
-					echo '<span class="language" id="'.$key.'">'.$language.'| </span>';
-				else
-					echo '<span class="language" id="'.$key.'">'.$language.'</span>';
-			}
-			?>
-		</div>
-		<div class="pull-right" id="language-selector" style="position:relative; top:60p" >
-			<?= \backend\components\widgets\LanguageSelector::widget();?>
-		</div>
-        <?= $content ?>
-    </div>
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
->>>>>>> fc4054f5b1e5dbd3a987c6f8118caffdd63d1953
-    </div>
     <?php $this->endBody() ?>
 </body>
 </html>
