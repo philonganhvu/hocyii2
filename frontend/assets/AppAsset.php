@@ -30,6 +30,7 @@ class AppAsset extends AssetBundle
 
         //<!-- Footer Scripts
         'js/functions.js',
+        'js/main.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

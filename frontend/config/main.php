@@ -17,6 +17,19 @@ return [
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],
+        'i18n' => [
+            'translations' => [
+                'frontend' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    //'basePath' => '@common/messages',
+                    'sourceLanguage' => 'en',
+                    'fileMap'=>[
+                        'frontend'=>'frontend.php',
+                        'frontend/error'=>'error_frontend.php',
+                    ]
+                ]
+            ],
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -50,6 +63,9 @@ return [
             ],
         ],
 
+    ],
+    'as beforeRequest'=>[
+        'class'=>'frontend\components\CheckIfLoggedIn',
     ],
     'params' => $params,
 ];

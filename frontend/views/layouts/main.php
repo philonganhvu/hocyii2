@@ -46,7 +46,7 @@ AppAsset::register($this);
 
                 <!-- Primary Navigation
                 ============================================= -->
-                <nav id="primary-menu" class="dark">
+                <nav id="primary-menu">
 
                     <ul>
                         <li class="current"><a href="index.html"><div>Home</div></a>
@@ -631,107 +631,18 @@ AppAsset::register($this);
                             </div>
                         </li>
                     </ul>
-
-                    <!-- Top Cart
-                    ============================================= -->
-                    <!--<div id="top-cart">
-                        <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
-                        <div class="top-cart-content">
-                            <div class="top-cart-title">
-                                <h4>Shopping Cart</h4>
-                            </div>
-                            <div class="top-cart-items">
-                                <div class="top-cart-item clearfix">
-                                    <div class="top-cart-item-image">
-                                        <a href="#"><img src="<?/*=Yii::$app->homeUrl*/?>/images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt" /></a>
-                                    </div>
-                                    <div class="top-cart-item-desc">
-                                        <a href="#">Blue Round-Neck Tshirt</a>
-                                        <span class="top-cart-item-price">$19.99</span>
-                                        <span class="top-cart-item-quantity">x 2</span>
-                                    </div>
-                                </div>
-                                <div class="top-cart-item clearfix">
-                                    <div class="top-cart-item-image">
-                                        <a href="#"><img src="<?/*=Yii::$app->homeUrl*/?>/images/shop/small/6.jpg" alt="Light Blue Denim Dress" /></a>
-                                    </div>
-                                    <div class="top-cart-item-desc">
-                                        <a href="#">Light Blue Denim Dress</a>
-                                        <span class="top-cart-item-price">$24.99</span>
-                                        <span class="top-cart-item-quantity">x 3</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="top-cart-action clearfix">
-                                <span class="fleft top-checkout-price">$114.95</span>
-                                <button class="button button-3d button-small nomargin fright">View Cart</button>
-                            </div>
-                        </div>
-                    </div>--><!-- #top-cart end -->
-
-                    <!-- Top Search
-                    ============================================= -->
-                    <div id="top-search">
-                        <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-                        <form action="search.html" method="get">
-                            <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
-                        </form>
-                    </div><!-- #top-search end -->
-
+                    <!-- Top languages ===============multi languages============================== -->
+                    <div class="pull-right" id="language-selector" style="position: relative; top: 34px; right: 15px; font-size: 17px;">
+                        <?=\frontend\components\widgets\LanguageSelector::widget();?>
+                    </div>
+                    <!-- #languages end -->
                 </nav><!-- #primary-menu end -->
 
             </div>
-
         </div>
 
     </header><!-- #header end -->
 
-    <!--<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
-        <div class="slider-parallax-inner">
-
-            <div class="swiper-container swiper-parent">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide dark" style="background-image: url('<?/*=Yii::$app->homeUrl*/?>/images/slider/swiper/1.jpg');">
-                        <div class="container clearfix">
-                            <div class="slider-caption slider-caption-center">
-                                <h2 data-caption-animate="fadeInUp">Welcome to Canvas</h2>
-                                <p data-caption-animate="fadeInUp" data-caption-delay="200">Create just what you need for your Perfect Website. Choose from a wide range of Elements &amp; simply put them on your own Canvas.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide dark">
-                        <div class="container clearfix">
-                            <div class="slider-caption slider-caption-center">
-                                <h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-                                <p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-                            </div>
-                        </div>
-                        <div class="video-wrap">
-                            <video id="slide-video" poster="<?/*=Yii::$app->homeUrl*/?>/images/videos/explore.jpg" preload="auto" loop autoplay muted>
-                                <source src='<?/*=Yii::$app->homeUrl*/?>/images/videos/explore.webm' type='video/webm' />
-                                <source src='<?/*=Yii::$app->homeUrl*/?>/images/videos/explore.mp4' type='video/mp4' />
-                            </video>
-                            <div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background-image: url('<?/*=Yii::$app->homeUrl*/?>/images/slider/swiper/3.jpg'); background-position: center top;">
-                        <div class="container clearfix">
-                            <div class="slider-caption">
-                                <h2 data-caption-animate="fadeInUp">Great Performance</h2>
-                                <p data-caption-animate="fadeInUp" data-caption-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
-                <div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-            </div>
-
-            <a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
-        </div>
-    </section>
--->
     <!-- Content
     ============================================= -->
     <section id="content">

@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\web\JsExpression;
+
 $this->registerJsFile(Yii::$app->request->baseUrl.'/js/language.js',[
 		'depends' => [\yii\web\JqueryAsset::className()],
 		'position' => \yii\web\View::POS_END
@@ -23,7 +24,7 @@ $this->registerJsFile(Yii::$app->request->baseUrl.'/js/language.js',[
 			}
 		}
 	}else{
-		echo Html::dropDownList('lang', $currentLang, $languages,array(
+		echo Html::dropDownList('lang', $currentLang, $languages, array(
 			'onchange'=>'language_change(this)',
 			'crsf'=>true,
 		));

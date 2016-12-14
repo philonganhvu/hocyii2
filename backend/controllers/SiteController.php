@@ -86,6 +86,9 @@ class SiteController extends Controller
         }
     }
 
+    /**
+     * get dropdownlist languages
+     */
     public function actionLanguage()
     {
         if(isset($_POST['lang'])

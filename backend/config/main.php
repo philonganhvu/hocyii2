@@ -29,10 +29,6 @@ return [
 						'backend/error'=>'error_backend.php',
 					]
 				],
-				/*'backend*' => [
-					'class' => 'yii\i18n\PhpMessageSource',
-					'basePath' => '@common/messages',
-				],*/
 			],
 		],
         'user' => [
