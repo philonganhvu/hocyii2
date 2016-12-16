@@ -25,6 +25,7 @@ $this->registerJsFile(Yii::$app->request->baseUrl.'/js/language.js',[
 		}
 	}else{
 		echo Html::dropDownList('lang', $currentLang, $languages, array(
+			'class'=>'btn btn-info btn-select btn-select-light',
 			'onchange'=>'language_change(this)',
 			'crsf'=>true,
 		));

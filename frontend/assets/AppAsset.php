@@ -22,6 +22,7 @@ class AppAsset extends AssetBundle
         'css/animate.css',
         'css/magnific-popup.css',
         'css/responsive.css',
+        'css/bootstrap-select.min.css',
     ];
     public $js = [
         //<!-- External JavaScripts
